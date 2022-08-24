@@ -40,7 +40,7 @@ class KategoriController extends Controller
     {
         $nama_gambar = $request->file('gambar')->getClientOriginalName();
 
-        $request->file('gambar')->storeAs('/public/images/kategori', $nama_gambar);
+        $request->file('gambar')->move(public_path('assets/kategori'), $nama_gambar);
 
         $kategori = new Category;
         $kategori->nama = $request->kategori;
