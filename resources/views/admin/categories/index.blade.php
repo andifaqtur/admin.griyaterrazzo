@@ -37,7 +37,7 @@
                                         {{ $category->nama }}
                                     </td>
                                     <td class="text-center">
-                                        <img src="{{ asset('storage/images/kategori/'.$category->gambar) }}" style="width: 100px; height: 100px;" alt="">
+                                        <img src="{{ asset('assets/kategori/'.$category->gambar) }}" style="width: 100px; height: 100px;" alt="">
                                     </td>
                                     <td class="align-middle text-center">
                                         <a onclick="editForm({{ $category->id }})" class="btn-sm btn-primary"><i class="fa fa-pencil-alt"></i></a>
